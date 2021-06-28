@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="buddy_control" type="buddy_joy.py" name="buddy_joy" />
+        
+    <node pkg="joy" type="joy_node" name="joy_node" />
+</launch>

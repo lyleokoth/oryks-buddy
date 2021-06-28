@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <rosparam file="$(find buddy_control)/config/controller.yaml" 
+        command="load"/>
+        
+    <node args="motor_right_position_controller motor_left_position_controller 
+        slider_position_controller camera_joint_position_controller 
+        joint_state_controller " name="controller_spawner" ns="buddy" 
+        output="screen" pkg="controller_manager" respawn="false" 
+        type="spawner"/>
+
+</launch>
